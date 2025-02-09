@@ -1,2 +1,3 @@
 # FixPhoto
 利用ESRGAN的RRDBNET实现超分，并对照片去噪增加对比度等，实现老照片的修复
+需自行下载并输入ESRGAN模型的路径，使用RRDB_PSNR_x4.pth即可
