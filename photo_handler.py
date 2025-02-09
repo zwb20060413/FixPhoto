@@ -24,7 +24,7 @@ class preprocessing:
 
     def super_resolution(self, model_path = "esrgan.pth"):
         device = torch.device("cpu")
-        from 深度学习.model.arch import RRDBNet
+        from arch import RRDBNet
         model = RRDBNet(in_nc=3, out_nc=3, nf=64, nb=23, gc=32)
         state_dict = torch.load(model_path, map_location=device)
         model.load_state_dict(state_dict)
